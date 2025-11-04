@@ -1,0 +1,104 @@
+/* ====== GLOBAL STYLES ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f9fafc;
+  line-height: 1.6;
+}
+
+
+header {
+  background: linear-gradient(135deg, #9bc9ff, #3b85cf);
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+}
+
+header h1 {
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  margin-top: 10px;
+  color: #ccc;
+}
+
+dd{
+  padding:10px;
+  margin:10px;
+}
+.section {
+  max-width: 1000px;
+  margin: 60px auto;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 40px;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  padding-bottom: 10px
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 20px;
+}
+
+
+.resource-list {
+  list-style: disc;
+  margin-left: 30px;
+}
+
+.resource-list li {
+  margin-bottom: 10px;
+}
+
+.resource-list a {
+  color: #357ABD;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.resource-list a:hover {
+  color: #1f4e79;
+  text-decoration: underline;
+}
+
+.contact-box {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#nameInput {
+  flex: 1;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+#greetButton {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+}
+
+#greetButton:hover {
+  background-color: #357ABD;
+}
+
+
