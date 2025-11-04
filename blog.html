@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Tech Blog</title>
+  <link rel="stylesheet" href="style5.css" />
+</head>
+<body>
+  <header>
+    <button id="addBlogBtn">Add Blog</button>
+  </header>
+
+  <!-- Blog List -->
+  <main id="blogList">
+    <div class="blog-card">
+      <img src="pics1.jpg" alt="AI">
+      <div class="blog-card-content">
+        <h2>AI in Everyday Life</h2>
+        <p>Discover how artificial intelligence powers your daily apps and smart devices...</p>
+      </div>
+      <button onclick="openBlog(0)">Read More</button>
+    </div>
+
+    <div class="blog-card">
+      <img src="pics2.jpg" alt="Web Dev">
+      <div class="blog-card-content">
+        <h2>Modern Web Development</h2>
+        <p>Learn about the latest tools and frameworks shaping today’s web ecosystem...</p>
+      </div>
+      <button onclick="openBlog(1)">Read More</button>
+    </div>
+
+    <div class="blog-card">
+      <img src="pics3.jpg" alt="Web Dev">
+      <div class="blog-card-content">
+        <h2>Responsive Design Principles</h2>
+        <p>Working of seamlessly across devices..</p>
+      </div>
+      <button onclick="openBlog(2)">Read More</button>
+    </div>
+  </main>
+
+  <section id="blogView">
+    <button id="backBtn" onclick="goBack()">← Back</button>
+    <img id="blogImg" src="" alt="Blog Image">
+    <h2 id="blogTitle"></h2>
+    <p id="blogContent"></p>
+
+    <div class="comment-section">
+      <h3>Comments</h3>
+      <ul id="commentList" class="comment-list"></ul>
+      <form id="commentForm" class="comment-form">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <textarea id="comment" rows="3" placeholder="Your Comment" required></textarea>
+        <button type="submit">Post Comment</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="addBlogSection">
+    <h2>Add a New Blog</h2>
+    <form id="addBlogForm">
+      <input type="text" id="blogTitleInput" placeholder="Blog Title" required />
+      <input type="text" id="blogImageInput" placeholder="Image URL" required />
+      <textarea id="blogContentInput" rows="5" placeholder="Blog Content" required></textarea>
+      <button type="submit">Add Blog</button>
+    </form>
+  </section>
+
+  <script src="blog.js"></script>
+</body>
+</html>
