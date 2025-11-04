@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz Time!</title>
+  <link rel="stylesheet" href="style3.css" />
+</head>
+<body>
+  <main class="main-grid">
+
+    <section id="quizSection" class="panel quiz-panel" aria-labelledby="quiz-heading">
+      <h2 id="quiz-heading">Interactive Quiz</h2>
+      <p class="muted">Answer the questions, navigate back & forth, and get your score at the end.</p>
+
+      <div id="quizContainer" class="quiz-container">
+      </div>
+
+      <div class="quiz-controls">
+        <button id="prevQ" class="btn secondary" aria-label="Previous question">← Previous</button>
+        <button id="nextQ" class="btn primary" aria-label="Next question">Next →</button>
+        <button id="submitQuiz" class="btn success" aria-label="Submit quiz">Submit Quiz</button>
+      </div>
+
+      <div id="quizResult" class="result-box" aria-live="polite"></div>
+    </section>
+
+  </main>
+
+  <script src="quiz-joke.js"></script>
+</body>
+</html>

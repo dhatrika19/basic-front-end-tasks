@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Random Jokes...</title>
+  <link rel="stylesheet" href="style3.css" />
+</head>
+<body>
+  <main class="main-grid">
+
+    <section class="panel right-column">
+      <div id="apiPanel" class="api-panel" aria-labelledby="api-heading">
+        <h2 id="api-heading">Live Joke Fetcher</h2>
+        <p class="muted">Fetch a random joke from a public API and display it here.</p>
+        <div class="api-card">
+          <div id="jokeDisplay" class="joke-display">Press <strong>Get Joke</strong> to fetch one.</div>
+          <div class="api-controls">
+            <button id="getJokeBtn" class="btn primary">Get Joke</button>
+            <button id="getMultipleBtn" class="btn">Get 5 Jokes</button>
+            <div id="apiStatus" class="muted small-text" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="quiz-joke.js"></script>
+</body>
+</html>

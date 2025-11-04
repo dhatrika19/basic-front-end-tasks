@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carousel- SlideShow</title>
+  <link rel="stylesheet" href="style3.css" />
+</head>
+<body>
+  <main class="main-grid">
+    <section class="panel right-column">
+      <div id="carouselPanel" class="carousel-panel" aria-labelledby="carousel-heading">
+        <h2 id="carousel-heading">Image Carousel</h2>
+        <p class="muted">Click arrows or indicators. Toggle autoplay for automatic rotation.</p>
+
+        <div class="carousel">
+          <button class="carousel-btn prev" id="carouselPrev" aria-label="Previous image"><</button>
+          <div class="carousel-track" id="carouselTrack" tabindex="0" aria-live="polite"></div>
+          <button class="carousel-btn next" id="carouselNext" aria-label="Next image">></button>
+        </div>
+
+        <div class="carousel-controls">
+          <div id="carouselIndicators" class="indicators" role="tablist"></div>
+          <div class="control-row">
+            <button id="toggleAutoplay" class="btn">Start Autoplay</button>
+            <label><input type="checkbox" id="showCaptions" checked> Show Captions</label>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="slide.js"></script>
+</body>
+</html>
