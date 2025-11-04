@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Products Catalog</title>
+  <link rel="stylesheet" href="style4.css" />
+</head>
+<body>
+  <main class="wrap prod-main">
+    <aside class="filters">
+      <h3>Filters</h3>
+      <input type="search" id="searchInput" placeholder="Search..." />
+
+      <div class="filter-section">
+        <h4>Category</h4>
+        <label><input type="checkbox" class="cat" value="Electronics" checked /> Electronics</label>
+        <label><input type="checkbox" class="cat" value="Home" checked /> Home</label>
+        <label><input type="checkbox" class="cat" value="Clothing" checked /> Clothing</label>
+      </div>
+
+      <div class="filter-section">
+        <h4>Price</h4>
+        <label>Max price: <input id="priceRange" type="range" min="0" max="1500" step="5" value="1500" /></label>
+        <div>Showing &le; Rs.<span id="priceVal">1500</span></div>
+      </div>
+
+      <div class="filter-section">
+        <h4>Sort</h4>
+        <select id="sortSelect">
+          <option value="default">Recommended</option>
+          <option value="price-asc">Price: Low → High</option>
+          <option value="price-desc">Price: High → Low</option>
+          <option value="rating-desc">Rating: High → Low</option>
+          <option value="rating-asc">Rating: Low → High</option>
+        </select>
+      </div>
+
+      <button id="resetBtn" class="btn">Reset</button>
+    </aside>
+
+    <section class="catalog">
+      <div class="toolbar">
+        <div id="resultsCount"></div>
+      </div>
+      <div id="productsGrid" class="products-grid"></div>
+    </section>
+  </main>
+
+  <script src="product.js"></script>
+</body>
+</html>
